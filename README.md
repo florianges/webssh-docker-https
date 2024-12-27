@@ -27,6 +27,6 @@ $ docker build -t webssh-docker-https .
 You will need to expose one port in order to communicate with the WebSSH server.
 
 ```
-docker run -d --name webssh-docker -p 4433:4433 webssh-docker
+docker run -d --name webssh-docker -p 4433:4433 webssh-docker-https
 ```
 If you want to use HTTP, you need to expose port 8080.
