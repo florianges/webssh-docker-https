@@ -18,7 +18,6 @@ RUN \
     && addgroup -S webssh \
     && adduser -S webssh -G webssh \
     && pip install -U --no-cache-dir webssh \
-
 # Cleanup
     && apk del .dev-deps \
     && rm -rf /tmp/* /var/cache/apk/*
