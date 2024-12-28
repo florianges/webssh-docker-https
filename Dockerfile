@@ -30,5 +30,5 @@ RUN chown webssh:webssh host.key host.cert \
     && chmod 600 host.key host.cert
 
 USER webssh
-EXPOSE 8080
-ENTRYPOINT ["wssh", "--address=0.0.0.0", "--port=8080" ,"--keyfile=/tmp/host.key", "--certfile=/tmp/host.cert"]
+EXPOSE 4433
+ENTRYPOINT ["wssh", "--address=0.0.0.0", "--sslport=4433" ,"--keyfile=/tmp/host.key", "--certfile=/tmp/host.cert"]
